@@ -1,0 +1,21 @@
+# Node dependencies
+node_modules/
+.npm
+.eslintcache
+
+# Next.js build outputs
+.next/
+out/
+
+# IDE settings caches
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS junk files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4920 @@
+@media (max-width: 599px) {
+    .sessionColumns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 1rem;
+    }
+
+    .mainRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .aiColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: min(100%, 435px);
+        padding: 0;
+    }
+
+    .clientNameInput {
+        color: #31edae;
+        background-color: transparent;
+        font-size: 1.5rem;
+        border: none;
+        font-family: var(--font-family);
+        outline: none;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .aiBox {
+        padding: 1rem 0.9rem 2.8rem 0.9rem;
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.08) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        width: 100%;
+        max-width: 315px;
+        height: 375px;
+        margin-top: 1rem;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .aiOutput {
+        color: var(--color);
+        text-align: center;
+        font-size: 0.9rem;
+        font-family: var(--font-family);
+        margin-top: 1rem;
+        margin-bottom: auto;
+        white-space: pre-wrap;
+    }
+
+    .aiModelRow {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        right: 0;
+    }
+
+    .clipboardIcon {
+        height: 28px;
+        width: auto;
+        margin-left: 0.35rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .clipboardIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .clipboardIcon:active {
+        transform: scale(1);
+    }
+
+    .aiModelLabel {
+        color: #31edae;
+        font-size: 0.68rem;
+        font-family: var(--font-family);
+        align-self: flex-end;
+        opacity: 0.85;
+        letter-spacing: 0.04em;
+        margin-right: 0.55rem;
+    }
+
+    .clinicianInfo {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        z-index: 1001;
+    }
+
+    .clinicianName {
+        font-family: var(--font-family);
+        color: var(--color);
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .clinicName {
+        font-family: var(--font-family);
+        color: #31edae;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .homeButton {
+        align-self: start;
+        padding: 0.25rem 0.85rem;
+        border-radius: 50px;
+        border: 1px solid rgba(92, 30, 245, 0.4);
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.15), rgba(92, 30, 245, 0.08));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(92, 30, 245, 0.1);
+        margin-top: 2px;
+    }
+
+    .homeButtonText {
+        color: #b8a5ff;
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-size: 0.6rem;
+        font-weight: 500;
+    }
+
+    .homeButton:hover {
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.25), rgba(92, 30, 245, 0.15));
+        box-shadow: 0 8px 25px rgba(92, 30, 245, 0.2);
+        transform: translateY(-2px);
+        border-color: #b8a5ff;
+    }
+
+    .homeButton:active {
+        transform: translateY(0);
+    }
+
+    .pdfColumn {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    .pdfBox {
+        height: 500px;
+        width: 350px;
+        max-width: 100%;
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(92, 30, 245, 0.05) 100%);
+        margin: 2rem 0;
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        text-align: center;
+    }
+
+    .voteBox {
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.08) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 1rem 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        max-width: 380px;
+        min-height: 220px;
+        position: absolute;
+        left: 49%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        box-sizing: border-box;
+    }
+
+    .voteBoxTemplates {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 18px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .voteTemplateButton {
+        margin: 2px;
+        padding: 8px 18px;
+        border-radius: 8px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.6rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.1);
+    }
+
+    .voteTemplateButton:hover {
+        background: rgba(92, 30, 245, 0.12);
+        border-color: rgba(92, 30, 245, 0.4);
+        transform: scale(1.05);
+    }
+
+    .voteTemplateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedTemplate {
+        background: rgba(92, 30, 245, 0.2);
+        color: #b8a5ff;
+        font-weight: 600;
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        box-shadow: 0 0 8px rgba(92, 30, 245, 0.28);
+    }
+
+    .voteBoxInput {
+        width: 100%;
+        height: 120px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.6rem;
+        padding: 10px;
+        resize: none;
+        outline: none;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .voteBoxInput:focus {
+        border-color: #01f5ff;
+        box-shadow: 0 0 12px rgba(1, 245, 255, 0.3);
+        background-color: rgba(30, 30, 46, 0.9);
+    }
+
+    .voteBoxSubmitButton {
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .voteBoxSubmitButton:hover {
+        box-shadow: 0 8px 25px rgba(140, 82, 255, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .voteBoxSubmitButton:active {
+        transform: translateY(0);
+    }
+
+    .pdfContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sessionPDF {
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(56, 182, 255, 0.1);
+    }
+
+    .fullScreenRow {
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        padding-bottom: 8px;
+        z-index: 2;
+    }
+
+    .fullScreenIcon {
+        height: 18px;
+        width: 18px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .fullScreenIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .fullScreenIcon:active {
+        transform: scale(1);
+    }
+
+    .votingRow {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        flex-direction: row;
+        gap: 7px;
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+    .voteIcon {
+        height: 20px;
+        width: auto;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .voteIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .voteIcon:active {
+        transform: scale(1);
+    }
+
+    .AIButtonDisabled {
+        color: #fff;
+        filter: grayscale(0.5);
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        padding: 12px 30px;
+        border: none;
+        font-family: var(--font-family);
+        font-size: 18px;
+        border-radius: 7px;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        margin-top: 2rem;
+        transition: all 0.25s ease;
+    }
+
+    .AIButton {
+        color: #fff;
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        padding: 12px 30px;
+        border: none;
+        font-family: var(--font-family);
+        font-size: 18px;
+        border-radius: 7px;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+        margin-top: 2rem;
+        transition: all 0.25s ease;
+    }
+
+    .AIButton:hover {
+        box-shadow: 0 8px 25px rgba(140, 82, 255, 0.4);
+        filter: brightness(1.07);
+        transform: translateY(-2px) scale(1.04);
+    }
+
+    .AIButton:active {
+        transform: translateY(0) scale(1);
+    }
+
+    .recordColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: fit-content;
+        align-items: center;
+        padding-top: 2rem;
+        justify-content: center;
+    }
+
+    .recordButton {
+        height: 225px;
+        width: 225px;
+        border-radius: 50%;
+        border: none;
+        background-color: #9440dd;
+        transition: all 0.3s ease;
+    }
+
+    [data-theme='light'] .recordButton {
+        background-color: #170430;
+    }
+
+    .micIcon {
+        height: 75px;
+        width: 55px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .recordButtonActive {
+        position: relative;
+        height: 225px;
+        width: 225px;
+        border-radius: 50%;
+        border: none;
+        background-color: #9440dd;
+        transition: all 0.3s ease;
+        overflow: visible;
+        z-index: 1;
+    }
+
+    [data-theme='light'] .recordButtonActive {
+        background-color: #170430;
+    }
+
+    .recordButtonActive::before,
+    .recordButtonActive::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .recordButtonActive::before {
+        width: 320px;
+        height: 320px;
+        border: 4px solid #a97cffcc;
+        opacity: 0.85;
+        animation: speechWave1 1.8s infinite linear;
+    }
+
+    [data-theme='light'] .recordButtonActive::before {
+        border: 4px solid #130724bd;
+    }
+
+    .recordButtonActive::after {
+        width: 370px;
+        height: 370px;
+        border: 4px solid #31edaecc;
+        opacity: 0.7;
+        animation: speechWave2 2.2s infinite linear;
+    }
+
+    .recordButtonActive .micIcon {
+        position: relative;
+        z-index: 2;
+    }
+
+    .recordButtonActive::marker,
+    .recordButtonActive .extraWave {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        width: 420px;
+        height: 420px;
+        border: 3px solid #31edae99;
+        opacity: 0.35;
+        animation: speechWave3 3s infinite linear;
+    }
+
+    .recordButton:hover,
+    .recordButtonActive:hover {
+        transform: scale(1.05);
+    }
+
+    .recordButton:active,
+    .recordButtonActive:active {
+        transform: scale(1);
+    }
+
+    .templateBox {
+        height: 150px;
+        width: 325px;
+        max-width: 100%;
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(92, 30, 245, 0.05) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 5rem;
+        padding: 8px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        box-sizing: border-box;
+    }
+
+    .aiTemplateButton {
+        margin: 5px;
+        padding: 6px 14px;
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.75rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.1);
+    }
+
+    .aiTemplateButton:hover {
+        transform: scale(1.05);
+        border-color: rgba(92, 30, 245, 0.45);
+    }
+
+    .aiTemplateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedAITemplate {
+        margin: 5px;
+        padding: 6px 14px;
+        border-radius: 6px;
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        background: rgba(92, 30, 245, 0.16);
+        color: #b8a5ff;
+        font-family: var(--font-family);
+        font-size: 0.75rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.16);
+    }
+
+    /* ======= Sensitive Input Styles ======= */
+    .sensitiveScriptInput {
+        width: 400px;
+        min-height: 175px;
+        margin-top: 1.5rem;
+        margin-bottom: 0.9rem;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.72);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.8rem;
+        line-height: 1.5;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+        box-shadow: 0 4px 14px rgba(92, 30, 245, 0.12);
+        transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .sensitiveScriptInput:focus {
+        border-color: #01f5ff;
+        box-shadow: 0 0 0 3px rgba(1, 245, 255, 0.18);
+        background: rgba(30, 30, 46, 0.9);
+    }
+
+    .sensitiveScriptInput::placeholder {
+        color: rgba(194, 187, 218, 0.82);
+    }
+
+    /* ======= Consent Button Styles ======= */
+    .consentRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .consentLabel {
+        font-family: var(--font-family);
+        color: var(--color);
+        font-size: 0.875rem;
+    }
+
+    .consentButton {
+        padding: 0;
+        border-radius: 6px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .consentButton:hover {
+        transform: scale(1.05);
+    }
+
+    .consentButton:active {
+        transform: scale(1);
+    }
+
+    .consentIcon {
+        height: 16px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ======= SOAP Column Styles ======= */
+    .soapColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 0.7rem 0.4rem;
+        width: fit-content;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .letterRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-top: 0.8rem;
+        justify-self: flex-start;
+        justify-items: flex-start;
+    }
+
+    .letterIcon {
+        height: 65px;
+        width: auto;
+        filter: brightness(0.95) contrast(1.08) saturate(1.04);
+    }
+
+    .letterText {
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.7rem;
+        letter-spacing: 0.02em;
+    }
+
+
+    /* ======= Sessions Stylings ======= */
+    .prevSessionsBox {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0.6rem;
+        padding-top: 0.5rem;
+        border: 1px solid var(--divider-color);
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.05) 100%);
+        box-shadow: 0 6px 20px rgba(23, 4, 48, 0.08);
+        margin-bottom: 5rem;
+    }
+
+    .prevSessionsHeader {
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+
+    .prevSessionsTitle {
+        font-size: 1.1rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .prevSessionsSplit {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        min-height: 260px;
+        width: 100%;
+    }
+
+    .prevSessionsListSplit {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    .prevSessionsList {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 320px;
+        overflow-y: auto;
+        padding: 0.1rem 0.25rem;
+        width: 100%;
+        border-radius: 8px;
+        margin-right: 10px;
+        overflow-x: visible;
+    }
+
+    .selectedPrevSessionButton,
+    .prevSessionsActivateButton {
+        border-radius: 4px;
+        border: 1px solid var(--divider-color);
+        background: transparent;
+        color: var(--color);
+        font-family: var(--font-family);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: fit-content;
+        text-align: center;
+        padding: 5px 25px;
+    }
+
+    .selectedPrevSessionButton:hover,
+    .prevSessionsActivateButton:hover {
+        background: rgba(92, 30, 245, 0.1);
+        border-color: rgba(92, 30, 245, 0.45);
+        transform: scale(1.05);
+    }
+
+    .selectedPrevSessionButton:active,
+    .prevSessionsActivateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedPrevSessionButton {
+        background: rgba(92, 30, 245, 0.16);
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        font-weight: 600;
+        box-shadow: 0 0 8px rgba(92, 30, 245, 0.28);
+    }
+
+    .prevSessionsActivateTitle {
+        font-size: 0.5rem;
+        margin: 0;
+        color: var(--color);
+    }
+
+    .prevSessionsActivateButton:hover .prevSessionsActivateTitle,
+    .selectedPrevSessionButton:hover .prevSessionsActivateTitle {
+        color: #b8a5ff;
+    }
+
+    .noPrevSessions {
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.5rem;
+        opacity: 0.75;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        margin-top: 2rem;
+        font-style: italic;
+    }
+
+    .prevSessionButton {
+        justify-self: end;
+        width: fit-content;
+        height: auto;
+        border-radius: 6px;
+        padding: 5px 45px;
+        border: 1px solid var(--divider-color);
+        background: rgba(74, 74, 83, 0.65);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .prevSessionButton:hover {
+        transform: scale(1.02);
+    }
+
+    .prevSessionButton:active {
+        transform: scale(1);
+    }
+
+    .plusIcon {
+        height: 10px;
+        width: auto;
+        transition: all 0.2s ease;
+    }
+
+    .prevSessionsInfoBox {
+        display: flex;
+        flex-direction: row;
+        gap: 0.45rem;
+        width: 100%;
+    }
+
+    .prevSessionsInfoPro,
+    .prevSessionsInfoPatient {
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        padding: 0.85rem;
+        overflow-y: auto;
+        background: rgba(30, 30, 46, 0.45);
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .prevSessionText {
+        margin: 0;
+        font-size: 0.7rem;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        line-height: 1.45;
+        color: var(--color);
+        background-color: transparent;
+        border: none;
+        resize: none;
+        outline: none;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    .prevSessionText::placeholder {
+        color: rgba(194, 187, 218, 0.82);
+    }
+
+    .prevSessionText:focus,
+    .prevSessionText:focus-visible,
+    .prevSessionText:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .missingPatientText {
+        color: rgba(255, 97, 146, 0.85);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+
+    /* ======= Patient Assignment Stylings ======= */
+    .clientAssignmentsTitle {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: var(--color);
+        text-align: center;
+    }
+
+    .clientAssignments {
+        width: 300px;
+        height: 500px;
+        padding: 0.9rem;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 97, 146, 0.35);
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 122, 162, 0.18) 0%, transparent 35%),
+            linear-gradient(145deg, rgba(48, 18, 38, 0.95) 0%, rgba(35, 14, 33, 0.95) 100%);
+        box-shadow:
+            0 10px 30px rgba(255, 73, 140, 0.12),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+
+    .assignmentsColumnDisplay {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        padding: 0.1rem 0;
+    }
+
+    .clientAssignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        padding: 0.75rem 0.8rem;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 123, 172, 0.32);
+        background: linear-gradient(135deg, rgba(255, 88, 150, 0.16), rgba(189, 41, 109, 0.08));
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .clientAssignment:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 145, 186, 0.62);
+        background: linear-gradient(135deg, rgba(255, 102, 159, 0.24), rgba(205, 51, 125, 0.14));
+        box-shadow: 0 10px 22px rgba(255, 91, 154, 0.2);
+    }
+
+    .clientAssignment:active {
+        transform: translateY(0);
+        background-color: rgba(202, 79, 124, 0.26);
+    }
+
+    .clientAssignmentTitle {
+        margin: 0;
+        font-family: var(--font-family);
+        font-size: 0.92rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: #ffd8e9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .deleteAssignmentButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: fit-content;
+        padding: 0.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        flex: 0 0 auto;
+        border-radius: 6px;
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .deleteAssignmentButton:hover {
+        transform: scale(1.06);
+        border-color: rgba(255, 167, 200, 0.85);
+        border-radius: 6px;
+        background: rgba(255, 111, 164, 0.26);
+        box-shadow: 0 6px 14px rgba(255, 93, 151, 0.28);
+    }
+
+    .deleteAssignmentButton:active {
+        transform: scale(1);
+        background-color: rgba(202, 79, 124, 0.26);
+        border-radius: 6px;
+    }
+
+    .deleteIcon {
+        width: auto;
+        height: 18px;
+        opacity: 0.95;
+        filter: saturate(1.1) contrast(1.05);
+    }
+
+    .newAssignmentButton {
+        width: 100%;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 138, 185, 0.48);
+        background: linear-gradient(135deg, rgba(255, 97, 146, 0.14), rgba(255, 122, 162, 0.08));
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        cursor: pointer;
+        justify-self: end;
+        transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .newAssignmentButton:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 170, 202, 0.8);
+        background: linear-gradient(135deg, rgba(255, 113, 159, 0.22), rgba(255, 134, 173, 0.12));
+        box-shadow: 0 8px 20px rgba(255, 92, 150, 0.2);
+    }
+
+    .newAssignmentButton:active {
+        transform: translateY(0);
+    }
+
+    /* ======= Assignment editing card ======= */
+    .assignmentCardOverlay {
+        position: fixed;
+        inset: 0;
+        z-index: 5000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(3px);
+    }
+
+    .assignmentCard {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 85%;
+        padding: 28px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.15) 0%, transparent 50%),
+            linear-gradient(145deg, #1e1e2e 0%, #181824 100%);
+        box-shadow: 0 20px 48px rgba(226, 58, 126, 0.2);
+    }
+
+    .assignmentTitleInput {
+        width: 100%;
+        padding: 7px 11px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+        color: #f0d6e8;
+        font-size: 13px;
+        font-weight: 600;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .assignmentTitleInput:focus {
+        border-color: rgba(255, 130, 175, 0.65);
+        background: rgba(255, 130, 175, 0.12);
+    }
+
+    .assignmentCardTextColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+    }
+
+    .assignmentDescriptionInput {
+        width: 100%;
+        height: 200px;
+        padding: 7px 11px;
+        border: none;
+        background: none;
+        color: #f0d6e8;
+        font-size: 10px;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .assignmentDescriptionInput:focus,
+    .assignmentDescriptionInput:focus-visible,
+    .assignmentDescriptionInput:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .assignmentCardFileRow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .fileInputHidden {
+        display: none;
+    }
+
+    .fileAttachButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 0 0.3rem 0.6rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .fileAttachButton:hover {
+        transform: translateY(-1px);
+    }
+
+    .fileAttachButton:active {
+        transform: translateY(0);
+    }
+
+    .paperclipIcon {
+        width: auto;
+        height: 20px;
+        object-fit: contain;
+        opacity: 0.95;
+    }
+
+    .attachedFileLink {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 12px;
+        border-radius: 8px;
+        color: #f0d6e8;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 280px;
+        transition: all 0.3s ease;
+    }
+
+    .attachedFileLink:hover {
+        color: #d8acbf;
+    }
+
+    .deleteFileIcon {
+        height: 16px;
+        width: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .deleteFileIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .deleteFileIcon:active {
+        transform: scale(1);
+    }
+
+    .assignmentDetailsColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        width: 100%;
+    }
+
+    .assignmentDetailsTitleRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 3px;
+    }
+
+    .assignmentDetailsTitle {
+        flex: 1;
+        margin: 0;
+        font-size: 9px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--color);
+        opacity: 0.85;
+        text-align: left;
+    }
+
+    .assignmentDetailsRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .assignmentDetailInput {
+        flex: 1;
+        padding: 7px 11px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+        color: #f0d6e8;
+        font-size: 9px;
+        outline: none;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .assignmentDetailInput:focus {
+        border-color: rgba(255, 130, 175, 0.65);
+        background: rgba(255, 130, 175, 0.12);
+    }
+
+    .saveAssignmentButton {
+        align-self: flex-end;
+        padding: 6px 20px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 130, 175, 0.4);
+        background: linear-gradient(135deg, rgba(255, 100, 160, 0.35), rgba(255, 150, 190, 0.2));
+        color: #f0d6e8;
+        font-size: 11px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .saveAssignmentButton:hover {
+        background: linear-gradient(135deg, rgba(255, 100, 160, 0.5), rgba(255, 150, 190, 0.32));
+        border-color: rgba(255, 130, 175, 0.7);
+        transform: scale(1.03);
+    }
+
+    .saveAssignmentButton:active {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    /* ======= CONCUSSION DATA DISPLAY STYLES ======= */
+    .concussionColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+        height: 85%;
+    }
+
+    .concussionHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.65rem;
+    }
+
+    .concussionPast {
+        font-size: 1.1rem;
+        color: var(--color);
+        text-align: left;
+        margin: 0;
+    }
+
+    .concussionPastResults {
+        font-weight: 500;
+        color: #31edae;
+        margin-left: 0.25rem;
+        font-style: italic;
+    }
+
+    .concussionDetailsHeader {
+        font-size: 1rem;
+        align-self: first baseline;
+        margin: 0;
+    }
+
+    .concussionDetails {
+        margin: 0;
+        font-family: var(--font-family);
+        color: var(--color);
+        line-height: 1.1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: first baseline;
+        margin-left: 5px;
+        margin-bottom: 10px
+    }
+
+    .pastConcussionDetailLabel {
+        margin: 0;
+        font-family: var(--font-family);
+        color: rgba(231, 228, 242, 0.92);
+        font-size: clamp(0.68rem, 1.2vw, 0.8rem);
+        letter-spacing: 0.04em;
+        padding: 0;
+    }
+
+    .concussionSymptoms {
+        margin: 0.25rem 0 0;
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color);
+        text-align: left;
+    }
+
+    .concussionSymptomsList {
+        margin: 0;
+        margin-left: 1.25rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.42rem;
+    }
+
+    .concussionSymptomItem {
+        margin: 0;
+        color: #d9d1ff;
+        font-family: var(--font-family);
+        font-size: 12px;
+        line-height: 1.15;
+        white-space: nowrap;
+        text-align: left;
+        letter-spacing: 0.02em;
+    }
+
+    .testResults {
+        margin: 0.3rem 0 0;
+        font-family: var(--font-family);
+        font-size: 14px;
+        color: var(--color);
+        padding: 0.52rem 0.68rem;
+    }
+
+    /* ======= Stylings for Controlling the Session View ======= */
+    .sessionViewColumn {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        margin-left: auto;
+        width: fit-content;
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-right: 1rem;
+        z-index: 500000;
+        position: absolute;
+        bottom: 5rem;
+    }
+
+    .sessionOption,
+    .sessionOptionActive {
+        width: 10px;
+        height: 10px;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+        outline: none;
+    }
+
+    .sessionOption {
+        background: rgba(192, 201, 212, 0.45);
+        opacity: 0.85;
+    }
+
+    .sessionOptionActive {
+        background: #55e7b6;
+        box-shadow: 0 0 0 3px rgba(85, 231, 182, 0.2);
+    }
+
+    .sessionOption:hover,
+    .sessionOptionActive:hover {
+        transform: scale(1.12);
+    }
+
+    .sessionOption:active,
+    .sessionOptionActive:active {
+        transform: scale(1);
+        outline: none;
+    }
+
+    .sidebarTooltip {
+        color: transparent;
+        opacity: 0;
+        font-size: 0;
+    }
+
+    /* ======= Light Theme Overrides ======= */
+    :global([data-theme="light"]) .aiBox,
+    :global([data-theme="light"]) .voteBox,
+    :global([data-theme="light"]) .pdfBox,
+    :global([data-theme="light"]) .templateBox {
+        background: linear-gradient(135deg, #ffffff 0%, rgba(92, 30, 245, 0.04) 100%);
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 8px 24px rgba(23, 4, 48, 0.08);
+    }
+
+    :global([data-theme="light"]) .voteTemplateButton,
+    :global([data-theme="light"]) .aiTemplateButton,
+    :global([data-theme="light"]) .voteBoxInput {
+        background-color: #ffffff;
+        color: var(--color);
+        border: 1px solid var(--divider-color);
+    }
+
+    :global([data-theme="light"]) .voteBoxInput:focus {
+        border-color: #5c1ef5;
+        box-shadow: 0 0 0 3px rgba(92, 30, 245, 0.14);
+        background-color: #ffffff;
+    }
+
+    :global([data-theme="light"]) .selectedTemplate,
+    :global([data-theme="light"]) .selectedAITemplate {
+        background: rgba(92, 30, 245, 0.1);
+        color: #5c1ef5;
+        border-color: rgba(92, 30, 245, 0.35);
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput {
+        background: #ffffff;
+        color: var(--color);
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 4px 12px rgba(23, 4, 48, 0.08);
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput:focus {
+        border-color: #5c1ef5;
+        box-shadow: 0 0 0 3px rgba(92, 30, 245, 0.14);
+        background: #ffffff;
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput::placeholder {
+        color: rgba(95, 88, 119, 0.82);
+    }
+
+    :global([data-theme="light"]) .homeButton {
+        border: 1px solid rgba(92, 30, 245, 0.35);
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.1), rgba(92, 30, 245, 0.05));
+        box-shadow: 0 4px 12px rgba(92, 30, 245, 0.12);
+    }
+
+    :global([data-theme="light"]) .homeButtonText {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .prevSessionsBox {
+        background: linear-gradient(145deg, #ffffff 0%, #f7f5ff 55%, #f2f8ff 100%);
+        border: 1px solid #ddd6f7;
+        box-shadow: 0 10px 28px rgba(30, 18, 74, 0.08);
+    }
+
+    :global([data-theme="light"]) .prevSessionsTitle {
+        color: #2a2352;
+    }
+
+    :global([data-theme="light"]) .noPrevSessions {
+        color: #5c5682;
+        opacity: 0.9;
+    }
+
+    :global([data-theme="light"]) .prevSessionsList {
+        background: transparent;
+        border: none;
+    }
+
+    :global([data-theme="light"]) .prevSessionsInfoPro {
+        background: #ffffff;
+        border: 1px solid #dcd3fa;
+        color: #2b2552;
+    }
+
+    :global([data-theme="light"]) .prevSessionsList .prevSessionsInfoPro:hover {
+        border-color: #8b6af2;
+        box-shadow: 0 6px 14px rgba(92, 30, 245, 0.14);
+        transform: translateY(-1px);
+    }
+
+    :global([data-theme="light"]) .prevSessionsInfoBox .prevSessionsInfoPro,
+    :global([data-theme="light"]) .prevSessionsInfoBox .prevSessionsInfoPatient {
+        background: linear-gradient(180deg, #ffffff 0%, #faf9ff 100%);
+        border: 1px solid #dcd3fa;
+        color: #2b2552;
+    }
+
+    :global([data-theme="light"]) .prevSessionText {
+        color: #342d63;
+    }
+
+    :global([data-theme="light"]) .prevSessionButton {
+        background: #ffffff;
+        border: 1px solid #d3c8f7;
+    }
+
+    :global([data-theme="light"]) .prevSessionButton:hover {
+        border-color: #8b6af2;
+        box-shadow: 0 6px 14px rgba(92, 30, 245, 0.16);
+    }
+
+    :global([data-theme='light']).prevSessionsActivateButton:hover .prevSessionsActivateTitle,
+    :global([data-theme='light']).selectedPrevSessionButton:hover .prevSessionsActivateTitle {
+        color: #7c63da;
+    }
+
+    :global([data-theme="light"]) .plusIcon {
+        filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(1200%) hue-rotate(219deg) brightness(96%) contrast(95%);
+    }
+
+    :global([data-theme="light"]) .clientAssignments {
+        border: 1px solid #f3bfd2;
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.2) 0%, transparent 38%),
+            linear-gradient(145deg, #fff5f9 0%, #ffeef5 100%);
+        box-shadow: 0 10px 24px rgba(226, 58, 126, 0.12);
+    }
+
+    :global([data-theme="light"]) .clientAssignment {
+        border: 1px solid #efb3cc;
+        background: linear-gradient(135deg, rgba(255, 122, 169, 0.2), rgba(255, 169, 199, 0.12));
+    }
+
+    :global([data-theme="light"]) .clientAssignment:hover {
+        border-color: #e47aa7;
+        background: linear-gradient(135deg, rgba(255, 114, 165, 0.28), rgba(255, 150, 189, 0.17));
+    }
+
+    :global([data-theme="light"]) .clientAssignmentTitle {
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .deleteAssignmentButton:hover {
+        border-color: #d96398;
+        background: rgba(255, 103, 158, 0.28);
+    }
+
+    :global([data-theme="light"]) .newAssignmentButton {
+        border: 1px dashed #e39bbd;
+        background: linear-gradient(135deg, rgba(255, 120, 168, 0.2), rgba(255, 167, 198, 0.13));
+    }
+
+    :global([data-theme="light"]) .newAssignmentButton:hover {
+        border-color: #d86298;
+        background: linear-gradient(135deg, rgba(255, 111, 162, 0.27), rgba(255, 149, 188, 0.18));
+    }
+
+    :global([data-theme="light"]) .assignmentCard {
+        border: 1px solid #f3bfd2;
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.2) 0%, transparent 40%),
+            linear-gradient(145deg, #fff5f9 0%, #ffeef5 100%);
+        box-shadow: 0 20px 48px rgba(226, 58, 126, 0.15);
+    }
+
+    :global([data-theme="light"]) .assignmentTitleInput,
+    :global([data-theme="light"]) .assignmentCardTextColumn,
+    :global([data-theme="light"]) .assignmentDetailInput {
+        border: 1px solid #efb3cc;
+        background: rgba(255, 122, 169, 0.1);
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .assignmentTitleInput:focus,
+    :global([data-theme="light"]) .assignmentDetailInput:focus {
+        border-color: #d96398;
+        background: rgba(255, 114, 165, 0.18);
+    }
+
+    :global([data-theme="light"]) .assignmentDescriptionInput {
+        background: transparent;
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .assignmentDescriptionInput::placeholder {
+        background: transparent;
+        color: rgba(111, 29, 67, 0.82);
+    }
+
+    :global([data-theme="light"]) .saveAssignmentButton {
+        border: 1px solid #e39bbd;
+        background: linear-gradient(135deg, rgba(255, 120, 168, 0.3), rgba(255, 167, 198, 0.18));
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .saveAssignmentButton:hover {
+        border-color: #d86298;
+        background: linear-gradient(135deg, rgba(255, 111, 162, 0.42), rgba(255, 149, 188, 0.26));
+    }
+
+    :global([data-theme="light"]) .fileAttachButton {
+        filter: brightness(0.3);
+    }
+
+    :global([data-theme="light"]) .attachedFileLink {
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .attachedFileLink:hover {
+        color: #d96398;
+    }
+
+    :global([data-theme="light"]) .concussionPastResults {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .pastConcussionDetailLabel {
+        color: rgba(49, 43, 77, 0.9);
+    }
+
+    :global([data-theme="light"]) .concussionSymptomItem {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .testResults {
+        color: #1f2b4a;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+    .sessionColumns {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    .mainRow {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .aiColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.9rem;
+        width: fit-content;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .clientNameInput {
+        color: #31edae;
+        background-color: transparent;
+        font-size: 1.8rem;
+        border: none;
+        font-family: var(--font-family);
+        outline: none;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .aiBox {
+        padding: 1rem 0.9rem 2.8rem 0.9rem;
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.08) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        width: 400px;
+        max-width: 100%;
+        height: 500px;
+        margin-top: 1rem;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .aiOutput {
+        color: var(--color);
+        text-align: center;
+        font-size: 1rem;
+        font-family: var(--font-family);
+        margin-top: 1.2rem;
+        margin-bottom: auto;
+        white-space: pre-wrap;
+    }
+
+    .aiModelRow {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0rem;
+        left: 0;
+        right: 0;
+    }
+
+    .clipboardIcon {
+        height: 32px;
+        width: auto;
+        margin-left: 0.35rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .clipboardIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .clipboardIcon:active {
+        transform: scale(1);
+    }
+
+    .aiModelLabel {
+        color: #31edae;
+        font-size: 0.8rem;
+        font-family: var(--font-family);
+        align-self: flex-end;
+        opacity: 0.85;
+        letter-spacing: 0.04em;
+        margin-right: 0.55rem;
+    }
+
+    .clinicianInfo {
+        position: absolute;
+        left: 1.5rem;
+        bottom: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        z-index: 1001;
+    }
+
+    .clinicianName {
+        font-family: var(--font-family);
+        color: var(--color);
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .clinicName {
+        font-family: var(--font-family);
+        color: #31edae;
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .homeButton {
+        align-self: start;
+        padding: 0.45rem 0.85rem;
+        border-radius: 50px;
+        border: 1px solid rgba(92, 30, 245, 0.4);
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.15), rgba(92, 30, 245, 0.08));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(92, 30, 245, 0.1);
+        margin-top: 2px;
+    }
+
+    .homeButtonText {
+        color: #b8a5ff;
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .homeButton:hover {
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.25), rgba(92, 30, 245, 0.15));
+        box-shadow: 0 8px 25px rgba(92, 30, 245, 0.2);
+        transform: translateY(-2px);
+        border-color: #b8a5ff;
+    }
+
+    .homeButton:active {
+        transform: translateY(0);
+    }
+
+    .pdfColumn {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .pdfBox {
+        height: 600px;
+        width: 450px;
+        max-width: 100%;
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(92, 30, 245, 0.05) 100%);
+        margin: 2rem 0;
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        text-align: center;
+    }
+
+    .voteBox {
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.08) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 1rem 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        max-width: 380px;
+        min-height: 220px;
+        position: absolute;
+        left: 50%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        box-sizing: border-box;
+    }
+
+    .voteBoxTemplates {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 18px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .voteTemplateButton {
+        margin: 2px;
+        padding: 8px 18px;
+        border-radius: 8px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.7rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.1);
+    }
+
+    .voteTemplateButton:hover {
+        background: rgba(92, 30, 245, 0.12);
+        border-color: rgba(92, 30, 245, 0.4);
+        transform: scale(1.05);
+    }
+
+    .voteTemplateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedTemplate {
+        background: rgba(92, 30, 245, 0.2);
+        color: #b8a5ff;
+        font-weight: 600;
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        box-shadow: 0 0 8px rgba(92, 30, 245, 0.28);
+    }
+
+    .voteBoxInput {
+        width: 100%;
+        height: 140px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.7rem;
+        padding: 10px;
+        resize: none;
+        outline: none;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .voteBoxInput:focus {
+        border-color: #01f5ff;
+        box-shadow: 0 0 12px rgba(1, 245, 255, 0.3);
+        background-color: rgba(30, 30, 46, 0.9);
+    }
+
+    .voteBoxSubmitButton {
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .voteBoxSubmitButton:hover {
+        box-shadow: 0 8px 25px rgba(140, 82, 255, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .voteBoxSubmitButton:active {
+        transform: translateY(0);
+    }
+
+    .pdfContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sessionPDF {
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(56, 182, 255, 0.1);
+    }
+
+    .fullScreenRow {
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        padding-bottom: 8px;
+        z-index: 2;
+    }
+
+    .fullScreenIcon {
+        height: 22px;
+        width: 22px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .fullScreenIcon:hover {
+        transform: scale(1.1);
+    }
+
+    .fullScreenIcon:active {
+        transform: scale(1);
+    }
+
+    .votingRow {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        flex-direction: row;
+        gap: 7px;
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+    .voteIcon {
+        height: 23px;
+        width: auto;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .voteIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .voteIcon:active {
+        transform: scale(1);
+    }
+
+    .AIButtonDisabled {
+        color: #fff;
+        filter: grayscale(0.5);
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        padding: 12px 30px;
+        border: none;
+        font-family: var(--font-family);
+        font-size: 18px;
+        border-radius: 7px;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        position: relative;
+        z-index: 1;
+        margin-top: 3rem;
+        transition: all 0.25s ease;
+    }
+
+    .AIButton {
+        color: #fff;
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        padding: 12px 30px;
+        border: none;
+        font-family: var(--font-family);
+        font-size: 18px;
+        border-radius: 7px;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        position: relative;
+        z-index: 1;
+        margin-top: 3rem;
+        transition: all 0.25s ease;
+    }
+
+    .AIButton:hover {
+        box-shadow: 0 8px 25px rgba(140, 82, 255, 0.4);
+        filter: brightness(1.07);
+        transform: translateY(-2px) scale(1.04);
+    }
+
+    .AIButton:active {
+        transform: translateY(0) scale(1);
+    }
+
+    .recordColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: fit-content;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    .recordButton {
+        height: 275px;
+        width: 275px;
+        border-radius: 50%;
+        border: none;
+        background-color: #9440dd;
+        transition: all 0.3s ease;
+    }
+
+    [data-theme='light'] .recordButton {
+        background-color: #170430;
+    }
+
+    .micIcon {
+        height: 75px;
+        width: 55px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .recordButtonActive {
+        position: relative;
+        height: 275px;
+        width: 275px;
+        border-radius: 50%;
+        border: none;
+        background-color: #9440dd;
+        transition: all 0.3s ease;
+        overflow: visible;
+        z-index: 1;
+    }
+
+    [data-theme='light'] .recordButtonActive {
+        background-color: #170430;
+    }
+
+    .recordButtonActive::before,
+    .recordButtonActive::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .recordButtonActive::before {
+        width: 320px;
+        height: 320px;
+        border: 4px solid #a97cffcc;
+        opacity: 0.85;
+        animation: speechWave1 1.8s infinite linear;
+    }
+
+    [data-theme='light'] .recordButtonActive::before {
+        border: 4px solid #130724bd;
+    }
+
+    .recordButtonActive::after {
+        width: 370px;
+        height: 370px;
+        border: 4px solid #31edaecc;
+        opacity: 0.7;
+        animation: speechWave2 2.2s infinite linear;
+    }
+
+    .recordButtonActive .micIcon {
+        position: relative;
+        z-index: 2;
+    }
+
+    .recordButtonActive::marker,
+    .recordButtonActive .extraWave {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        width: 420px;
+        height: 420px;
+        border: 3px solid #31edae99;
+        opacity: 0.35;
+        animation: speechWave3 3s infinite linear;
+    }
+
+    .recordButton:hover,
+    .recordButtonActive:hover {
+        transform: scale(1.05);
+    }
+
+    .recordButton:active,
+    .recordButtonActive:active {
+        transform: scale(1);
+    }
+
+    .templateBox {
+        height: 150px;
+        width: 325px;
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(92, 30, 245, 0.05) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-bottom: 5rem;
+        padding: 8px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        box-sizing: border-box;
+    }
+
+    .aiTemplateButton {
+        margin: 5px;
+        padding: 6px 16px;
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.1);
+    }
+
+    .aiTemplateButton:hover {
+        transform: scale(1.05);
+        border-color: rgba(92, 30, 245, 0.45);
+    }
+
+    .aiTemplateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedAITemplate {
+        margin: 5px;
+        padding: 6px 16px;
+        border-radius: 6px;
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        background: rgba(92, 30, 245, 0.16);
+        color: #b8a5ff;
+        font-family: var(--font-family);
+        font-size: 0.8rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.16);
+    }
+
+    /* ======= Sensitive Input Styles ======= */
+    .sensitiveScriptInput {
+        width: 500px;
+        min-height: 200px;
+        margin-top: 2rem;
+        margin-bottom: 1.1rem;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.72);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.8rem;
+        line-height: 1.5;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+        box-shadow: 0 4px 14px rgba(92, 30, 245, 0.12);
+        transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .sensitiveScriptInput:focus {
+        border-color: #01f5ff;
+        box-shadow: 0 0 0 3px rgba(1, 245, 255, 0.18);
+        background: rgba(30, 30, 46, 0.9);
+    }
+
+    .sensitiveScriptInput::placeholder {
+        color: rgba(194, 187, 218, 0.82);
+    }
+
+    /* ======= Consent Button Styles ======= */
+    .consentRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .consentLabel {
+        font-family: var(--font-family);
+        color: var(--color);
+        font-size: 1rem;
+    }
+
+    .consentButton {
+        padding: 0;
+        border-radius: 6px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .consentButton:hover {
+        transform: scale(1.05);
+    }
+
+    .consentButton:active {
+        transform: scale(1);
+    }
+
+    .consentIcon {
+        height: 20px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ======= SOAP Column Styles ======= */
+    .soapColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+        width: fit-content;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .letterRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-top: 1rem;
+        justify-self: flex-start;
+        justify-items: flex-start;
+    }
+
+    .letterIcon {
+        height: 90px;
+        width: auto;
+        filter: brightness(0.95) contrast(1.08) saturate(1.04);
+    }
+
+    .letterText {
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.8rem;
+        letter-spacing: 0.02em;
+    }
+
+    /* ======= Sessions Stylings ======= */
+    .prevSessionsBox {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        border: 1px solid var(--divider-color);
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.05) 100%);
+        box-shadow: 0 6px 20px rgba(23, 4, 48, 0.08);
+        margin-bottom: 7rem;
+    }
+
+    .prevSessionsHeader {
+        margin-bottom: 0.7rem;
+        text-align: center;
+    }
+
+    .prevSessionsTitle {
+        font-size: 1.3rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .prevSessionsSplit {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        min-height: 260px;
+        width: 100%;
+    }
+
+    .prevSessionsListSplit {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    .prevSessionsList {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 320px;
+        overflow-y: auto;
+        padding: 0.1rem 0.25rem;
+        width: 100%;
+        border-radius: 8px;
+        margin-right: 10px;
+        overflow-x: visible;
+    }
+
+    .selectedPrevSessionButton,
+    .prevSessionsActivateButton {
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: transparent;
+        color: var(--color);
+        font-family: var(--font-family);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: fit-content;
+        text-align: center;
+        padding: 10px 35px;
+    }
+
+    .selectedPrevSessionButton:hover,
+    .prevSessionsActivateButton:hover {
+        background: rgba(92, 30, 245, 0.1);
+        border-color: rgba(92, 30, 245, 0.45);
+        transform: scale(1.05);
+    }
+
+    .selectedPrevSessionButton:active,
+    .prevSessionsActivateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedPrevSessionButton {
+        background: rgba(92, 30, 245, 0.16);
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        font-weight: 600;
+        box-shadow: 0 0 8px rgba(92, 30, 245, 0.28);
+    }
+
+    .prevSessionsActivateTitle {
+        font-size: 0.7rem;
+        margin: 0;
+        color: var(--color);
+    }
+
+    .prevSessionsActivateButton:hover .prevSessionsActivateTitle,
+    .selectedPrevSessionButton:hover .prevSessionsActivateTitle {
+        color: #b8a5ff;
+    }
+
+    .noPrevSessions {
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        opacity: 0.75;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        margin-top: 2rem;
+        font-style: italic;
+    }
+
+    .prevSessionButton {
+        justify-self: end;
+        width: fit-content;
+        height: 36px;
+        border-radius: 8px;
+        padding: 10px 55px;
+        border: 1px solid var(--divider-color);
+        background: rgba(74, 74, 83, 0.65);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .prevSessionButton:hover {
+        transform: scale(1.02);
+    }
+
+    .prevSessionButton:active {
+        transform: scale(1);
+    }
+
+    .plusIcon {
+        height: 18px;
+        width: auto;
+        transition: all 0.2s ease;
+    }
+
+    .prevSessionsInfoBox {
+        display: flex;
+        flex-direction: row;
+        gap: 0.45rem;
+        width: 100%;
+    }
+
+    .prevSessionsInfoPro,
+    .prevSessionsInfoPatient {
+        border-radius: 10px;
+        border: 1px solid var(--divider-color);
+        padding: 0.75rem;
+        overflow-y: auto;
+        background: rgba(30, 30, 46, 0.45);
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .prevSessionText {
+        margin: 0;
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        line-height: 1.45;
+        color: var(--color);
+        background-color: transparent;
+        border: none;
+        resize: none;
+        outline: none;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    .prevSessionText::placeholder {
+        color: rgba(194, 187, 218, 0.82);
+    }
+
+    .prevSessionText:focus,
+    .prevSessionText:focus-visible,
+    .prevSessionText:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .missingPatientText {
+        color: rgba(255, 97, 146, 0.85);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+
+    /* ======= Patient Assignment Stylings ======= */
+    .clientAssignmentsTitle {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: var(--color);
+        text-align: center;
+    }
+
+    .clientAssignments {
+        width: 300px;
+        height: 500px;
+        padding: 0.9rem;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 97, 146, 0.35);
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 122, 162, 0.18) 0%, transparent 35%),
+            linear-gradient(145deg, rgba(48, 18, 38, 0.95) 0%, rgba(35, 14, 33, 0.95) 100%);
+        box-shadow:
+            0 10px 30px rgba(255, 73, 140, 0.12),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+
+    .assignmentsColumnDisplay {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        padding: 0.1rem 0;
+    }
+
+    .clientAssignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        padding: 0.75rem 0.8rem;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 123, 172, 0.32);
+        background: linear-gradient(135deg, rgba(255, 88, 150, 0.16), rgba(189, 41, 109, 0.08));
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .clientAssignment:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 145, 186, 0.62);
+        background: linear-gradient(135deg, rgba(255, 102, 159, 0.24), rgba(205, 51, 125, 0.14));
+        box-shadow: 0 10px 22px rgba(255, 91, 154, 0.2);
+    }
+
+    .clientAssignment:active {
+        transform: translateY(0);
+        background-color: rgba(202, 79, 124, 0.26);
+    }
+
+    .clientAssignmentTitle {
+        margin: 0;
+        font-family: var(--font-family);
+        font-size: 0.92rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: #ffd8e9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .deleteAssignmentButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: fit-content;
+        padding: 0.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        flex: 0 0 auto;
+        border-radius: 6px;
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .deleteAssignmentButton:hover {
+        transform: scale(1.06);
+        border-color: rgba(255, 167, 200, 0.85);
+        border-radius: 6px;
+        background: rgba(255, 111, 164, 0.26);
+        box-shadow: 0 6px 14px rgba(255, 93, 151, 0.28);
+    }
+
+    .deleteAssignmentButton:active {
+        transform: scale(1);
+        background-color: rgba(202, 79, 124, 0.26);
+        border-radius: 6px;
+    }
+
+    .deleteIcon {
+        width: auto;
+        height: 18px;
+        opacity: 0.95;
+        filter: saturate(1.1) contrast(1.05);
+    }
+
+    .newAssignmentButton {
+        width: 100%;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 138, 185, 0.48);
+        background: linear-gradient(135deg, rgba(255, 97, 146, 0.14), rgba(255, 122, 162, 0.08));
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        cursor: pointer;
+        justify-self: end;
+        transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .newAssignmentButton:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 170, 202, 0.8);
+        background: linear-gradient(135deg, rgba(255, 113, 159, 0.22), rgba(255, 134, 173, 0.12));
+        box-shadow: 0 8px 20px rgba(255, 92, 150, 0.2);
+    }
+
+    .newAssignmentButton:active {
+        transform: translateY(0);
+    }
+
+    /* ======= Assignment editing card ======= */
+    .assignmentCardOverlay {
+        position: fixed;
+        inset: 0;
+        z-index: 5000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(3px);
+    }
+
+    .assignmentCard {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 480px;
+        padding: 28px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.15) 0%, transparent 50%),
+            linear-gradient(145deg, #1e1e2e 0%, #181824 100%);
+        box-shadow: 0 20px 48px rgba(226, 58, 126, 0.2);
+    }
+
+    .assignmentTitleInput {
+        width: 100%;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+        color: #f0d6e8;
+        font-size: 16px;
+        font-weight: 600;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .assignmentTitleInput:focus {
+        border-color: rgba(255, 130, 175, 0.65);
+        background: rgba(255, 130, 175, 0.12);
+    }
+
+    .assignmentCardTextColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+    }
+
+    .assignmentDescriptionInput {
+        width: 100%;
+        height: 200px;
+        padding: 10px 14px;
+        border: none;
+        background: none;
+        color: #f0d6e8;
+        font-size: 14px;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .assignmentDescriptionInput:focus,
+    .assignmentDescriptionInput:focus-visible,
+    .assignmentDescriptionInput:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .assignmentCardFileRow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .fileInputHidden {
+        display: none;
+    }
+
+    .fileAttachButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 0 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .fileAttachButton:hover {
+        transform: translateY(-1px);
+    }
+
+    .fileAttachButton:active {
+        transform: translateY(0);
+    }
+
+    .paperclipIcon {
+        width: auto;
+        height: 22px;
+        object-fit: contain;
+        opacity: 0.95;
+    }
+
+    .attachedFileLink {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 12px;
+        border-radius: 8px;
+        color: #f0d6e8;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 280px;
+        transition: all 0.3s ease;
+    }
+
+    .attachedFileLink:hover {
+        color: #d8acbf;
+    }
+
+    .deleteFileIcon {
+        height: 18px;
+        width: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .deleteFileIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .deleteFileIcon:active {
+        transform: scale(1);
+    }
+
+    .assignmentDetailsColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .assignmentDetailsTitleRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 6px;
+    }
+
+    .assignmentDetailsTitle {
+        flex: 1;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--color);
+        opacity: 0.85;
+        text-align: left;
+    }
+
+    .assignmentDetailsRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .assignmentDetailInput {
+        flex: 1;
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+        color: #f0d6e8;
+        font-size: 13px;
+        outline: none;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .assignmentDetailInput:focus {
+        border-color: rgba(255, 130, 175, 0.65);
+        background: rgba(255, 130, 175, 0.12);
+    }
+
+    .saveAssignmentButton {
+        align-self: flex-end;
+        padding: 9px 22px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.4);
+        background: linear-gradient(135deg, rgba(255, 100, 160, 0.35), rgba(255, 150, 190, 0.2));
+        color: #f0d6e8;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .saveAssignmentButton:hover {
+        background: linear-gradient(135deg, rgba(255, 100, 160, 0.5), rgba(255, 150, 190, 0.32));
+        border-color: rgba(255, 130, 175, 0.7);
+        transform: scale(1.03);
+    }
+
+    .saveAssignmentButton:active {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    /* ======= CONCUSSION DATA DISPLAY STYLES ======= */
+    .concussionColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+        height: 85%;
+    }
+
+    .concussionHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .concussionPast {
+        font-size: 1.4rem;
+        color: var(--color);
+        text-align: left;
+        margin: 0;
+    }
+
+    .concussionPastResults {
+        font-weight: 500;
+        color: #31edae;
+        margin-left: 0.25rem;
+        font-style: italic;
+    }
+
+    .concussionDetailsHeader {
+        font-size: 1.1rem;
+        align-self: first baseline;
+        margin: 0;
+    }
+
+    .concussionDetails {
+        margin: 0;
+        font-family: var(--font-family);
+        color: var(--color);
+        line-height: 1.1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: first baseline;
+        margin-left: 5px;
+        margin-bottom: 10px
+    }
+
+    .pastConcussionDetailLabel {
+        margin: 0;
+        font-family: var(--font-family);
+        color: rgba(231, 228, 242, 0.92);
+        font-size: clamp(0.68rem, 1.2vw, 0.8rem);
+        letter-spacing: 0.04em;
+        padding: 0;
+    }
+
+    .concussionSymptoms {
+        margin: 0.25rem 0 0;
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color);
+        text-align: left;
+    }
+
+    .concussionSymptomsList {
+        margin: 0;
+        margin-left: 1.25rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.42rem;
+    }
+
+    .concussionSymptomItem {
+        margin: 0;
+        color: #d9d1ff;
+        font-family: var(--font-family);
+        font-size: 13px;
+        line-height: 1.15;
+        white-space: nowrap;
+        text-align: left;
+        letter-spacing: 0.02em;
+    }
+
+    .testResults {
+        margin: 0.3rem 0 0;
+        font-family: var(--font-family);
+        font-size: 16px;
+        color: var(--color);
+        padding: 0.52rem 0.68rem;
+    }
+
+    /* ======= Stylings for Controlling the Session View ======= */
+    .sessionViewColumn {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        margin-left: auto;
+        width: fit-content;
+        align-self: flex-end;
+        justify-self: flex-end;
+        margin-right: 1rem;
+        z-index: 500000;
+        position: absolute;
+        bottom: 6rem;
+    }
+
+    .sessionOption,
+    .sessionOptionActive {
+        width: 12px;
+        height: 12px;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+        outline: none;
+    }
+
+    .sessionOption {
+        background: rgba(192, 201, 212, 0.45);
+        opacity: 0.85;
+    }
+
+    .sessionOptionActive {
+        background: #55e7b6;
+        box-shadow: 0 0 0 3px rgba(85, 231, 182, 0.2);
+    }
+
+    .sessionOption:hover,
+    .sessionOptionActive:hover {
+        transform: scale(1.12);
+    }
+
+    .sessionOption:active,
+    .sessionOptionActive:active {
+        transform: scale(1);
+        outline: none;
+    }
+
+    .sidebarTooltip {
+        color: transparent;
+        opacity: 0;
+        font-size: 0;
+    }
+
+    /* ======= Light Theme Overrides ======= */
+    :global([data-theme="light"]) .aiBox,
+    :global([data-theme="light"]) .voteBox,
+    :global([data-theme="light"]) .pdfBox,
+    :global([data-theme="light"]) .templateBox {
+        background: linear-gradient(135deg, #ffffff 0%, rgba(92, 30, 245, 0.04) 100%);
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 8px 24px rgba(23, 4, 48, 0.08);
+    }
+
+    :global([data-theme="light"]) .voteTemplateButton,
+    :global([data-theme="light"]) .aiTemplateButton,
+    :global([data-theme="light"]) .voteBoxInput {
+        background-color: #ffffff;
+        color: var(--color);
+        border: 1px solid var(--divider-color);
+    }
+
+    :global([data-theme="light"]) .voteBoxInput:focus {
+        border-color: #5c1ef5;
+        box-shadow: 0 0 0 3px rgba(92, 30, 245, 0.14);
+        background-color: #ffffff;
+    }
+
+    :global([data-theme="light"]) .selectedTemplate,
+    :global([data-theme="light"]) .selectedAITemplate {
+        background: rgba(92, 30, 245, 0.1);
+        color: #5c1ef5;
+        border-color: rgba(92, 30, 245, 0.35);
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput {
+        background: #ffffff;
+        color: var(--color);
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 4px 12px rgba(23, 4, 48, 0.08);
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput:focus {
+        border-color: #5c1ef5;
+        box-shadow: 0 0 0 3px rgba(92, 30, 245, 0.14);
+        background: #ffffff;
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput::placeholder {
+        color: rgba(95, 88, 119, 0.82);
+    }
+
+    :global([data-theme="light"]) .homeButton {
+        border: 1px solid rgba(92, 30, 245, 0.35);
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.1), rgba(92, 30, 245, 0.05));
+        box-shadow: 0 4px 12px rgba(92, 30, 245, 0.12);
+    }
+
+    :global([data-theme="light"]) .homeButtonText {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .prevSessionsBox {
+        background: linear-gradient(145deg, #ffffff 0%, #f7f5ff 55%, #f2f8ff 100%);
+        border: 1px solid #ddd6f7;
+        box-shadow: 0 10px 28px rgba(30, 18, 74, 0.08);
+    }
+
+    :global([data-theme="light"]) .prevSessionsTitle {
+        color: #2a2352;
+    }
+
+    :global([data-theme="light"]) .noPrevSessions {
+        color: #5c5682;
+        opacity: 0.9;
+    }
+
+    :global([data-theme="light"]) .prevSessionsList {
+        background: transparent;
+        border: none;
+    }
+
+    :global([data-theme="light"]) .prevSessionsInfoPro {
+        background: #ffffff;
+        border: 1px solid #dcd3fa;
+        color: #2b2552;
+    }
+
+    :global([data-theme="light"]) .prevSessionsList .prevSessionsInfoPro:hover {
+        border-color: #8b6af2;
+        box-shadow: 0 6px 14px rgba(92, 30, 245, 0.14);
+        transform: translateY(-1px);
+    }
+
+    :global([data-theme="light"]) .prevSessionsInfoBox .prevSessionsInfoPro,
+    :global([data-theme="light"]) .prevSessionsInfoBox .prevSessionsInfoPatient {
+        background: linear-gradient(180deg, #ffffff 0%, #faf9ff 100%);
+        border: 1px solid #dcd3fa;
+        color: #2b2552;
+    }
+
+    :global([data-theme="light"]) .prevSessionText {
+        color: #342d63;
+    }
+
+    :global([data-theme="light"]) .prevSessionButton {
+        background: #ffffff;
+        border: 1px solid #d3c8f7;
+    }
+
+    :global([data-theme="light"]) .prevSessionButton:hover {
+        border-color: #8b6af2;
+        box-shadow: 0 6px 14px rgba(92, 30, 245, 0.16);
+    }
+
+    :global([data-theme='light']).prevSessionsActivateButton:hover .prevSessionsActivateTitle,
+    :global([data-theme='light']).selectedPrevSessionButton:hover .prevSessionsActivateTitle {
+        color: #7c63da;
+    }
+
+    :global([data-theme="light"]) .plusIcon {
+        filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(1200%) hue-rotate(219deg) brightness(96%) contrast(95%);
+    }
+
+    :global([data-theme="light"]) .clientAssignments {
+        border: 1px solid #f3bfd2;
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.2) 0%, transparent 38%),
+            linear-gradient(145deg, #fff5f9 0%, #ffeef5 100%);
+        box-shadow: 0 10px 24px rgba(226, 58, 126, 0.12);
+    }
+
+    :global([data-theme="light"]) .clientAssignment {
+        border: 1px solid #efb3cc;
+        background: linear-gradient(135deg, rgba(255, 122, 169, 0.2), rgba(255, 169, 199, 0.12));
+    }
+
+    :global([data-theme="light"]) .clientAssignment:hover {
+        border-color: #e47aa7;
+        background: linear-gradient(135deg, rgba(255, 114, 165, 0.28), rgba(255, 150, 189, 0.17));
+    }
+
+    :global([data-theme="light"]) .clientAssignmentTitle {
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .deleteAssignmentButton:hover {
+        border-color: #d96398;
+        background: rgba(255, 103, 158, 0.28);
+    }
+
+    :global([data-theme="light"]) .newAssignmentButton {
+        border: 1px dashed #e39bbd;
+        background: linear-gradient(135deg, rgba(255, 120, 168, 0.2), rgba(255, 167, 198, 0.13));
+    }
+
+    :global([data-theme="light"]) .newAssignmentButton:hover {
+        border-color: #d86298;
+        background: linear-gradient(135deg, rgba(255, 111, 162, 0.27), rgba(255, 149, 188, 0.18));
+    }
+
+    :global([data-theme="light"]) .assignmentCard {
+        border: 1px solid #f3bfd2;
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.2) 0%, transparent 40%),
+            linear-gradient(145deg, #fff5f9 0%, #ffeef5 100%);
+        box-shadow: 0 20px 48px rgba(226, 58, 126, 0.15);
+    }
+
+    :global([data-theme="light"]) .assignmentTitleInput,
+    :global([data-theme="light"]) .assignmentCardTextColumn,
+    :global([data-theme="light"]) .assignmentDetailInput {
+        border: 1px solid #efb3cc;
+        background: rgba(255, 122, 169, 0.1);
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .assignmentTitleInput:focus,
+    :global([data-theme="light"]) .assignmentDetailInput:focus {
+        border-color: #d96398;
+        background: rgba(255, 114, 165, 0.18);
+    }
+
+    :global([data-theme="light"]) .assignmentDescriptionInput {
+        background: transparent;
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .assignmentDescriptionInput::placeholder {
+        background: transparent;
+        color: rgba(111, 29, 67, 0.82);
+    }
+
+    :global([data-theme="light"]) .saveAssignmentButton {
+        border: 1px solid #e39bbd;
+        background: linear-gradient(135deg, rgba(255, 120, 168, 0.3), rgba(255, 167, 198, 0.18));
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .saveAssignmentButton:hover {
+        border-color: #d86298;
+        background: linear-gradient(135deg, rgba(255, 111, 162, 0.42), rgba(255, 149, 188, 0.26));
+    }
+
+    :global([data-theme="light"]) .fileAttachButton {
+        filter: brightness(0.3);
+    }
+
+    :global([data-theme="light"]) .attachedFileLink {
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .attachedFileLink:hover {
+        color: #d96398;
+    }
+
+    :global([data-theme="light"]) .concussionPastResults {
+        color: #5c1ef5
+    }
+
+    :global([data-theme="light"]) .pastConcussionDetailLabel {
+        color: rgba(49, 43, 77, 0.9);
+    }
+
+    :global([data-theme="light"]) .concussionSymptomItem {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .testResults {
+        color: #1f2b4a;
+    }
+}
+
+@media (min-width: 1000px) {
+    .mainRow {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        gap: 5rem;
+        margin: 0;
+        align-items: center;
+        align-content: center;
+    }
+
+    .aiColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0.9rem;
+        width: fit-content;
+        align-self: flex-start;
+    }
+
+    .clientNameInput {
+        color: #31edae;
+        background-color: transparent;
+        font-size: 2rem;
+        border: none;
+        font-family: var(--font-family);
+        outline: none;
+        margin-top: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .aiBox {
+        padding: 1rem 0.9rem 2.8rem 0.9rem;
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.08) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        width: 24vw;
+        max-width: 400px;
+        height: 500px;
+        margin-top: 2rem;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+        box-sizing: border-box;
+    }
+
+    .aiOutput {
+        color: var(--color);
+        text-align: center;
+        font-size: 1rem;
+        font-family: var(--font-family);
+        margin-top: 1.2rem;
+        margin-bottom: auto;
+        letter-spacing: 0.01em;
+        white-space: pre-wrap;
+    }
+
+    .aiModelRow {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 0rem;
+        right: 0;
+        left: 0;
+        margin: 0;
+        background: transparent;
+        z-index: 1000;
+    }
+
+    .clipboardIcon {
+        height: 32px;
+        width: auto;
+        align-self: flex-start;
+        margin-left: 0.4rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .clipboardIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .clipboardIcon:active {
+        transform: scale(1);
+    }
+
+    .aiModelLabel {
+        color: #31edae;
+        font-size: 0.8rem;
+        font-family: var(--font-family);
+        text-align: right;
+        align-self: flex-end;
+        opacity: 0.85;
+        letter-spacing: 0.04em;
+        margin-right: 0.6rem;
+    }
+
+    .clinicianInfo {
+        position: absolute;
+        left: 85px;
+        bottom: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        z-index: 1001;
+    }
+
+    .clinicianName {
+        font-family: var(--font-family);
+        color: var(--color);
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .clinicName {
+        font-family: var(--font-family);
+        color: #31edae;
+        margin: 0;
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .homeButton {
+        align-self: start;
+        padding: 0.45rem 0.85rem;
+        border-radius: 7px;
+        border: 1px solid rgba(92, 30, 245, 0.4);
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.15), rgba(92, 30, 245, 0.08));
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(92, 30, 245, 0.1);
+        margin-top: 2px;
+    }
+
+    .homeButtonText {
+        color: #b8a5ff;
+        text-decoration: none;
+        font-family: var(--font-family);
+        font-size: 1rem;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+
+    .homeButton:hover {
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.25), rgba(92, 30, 245, 0.15));
+        box-shadow: 0 8px 25px rgba(92, 30, 245, 0.2);
+        transform: translateY(-2px);
+        border-color: #b8a5ff;
+    }
+
+    .homeButton:active {
+        transform: translateY(0);
+    }
+
+    .pdfColumn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem auto;
+    }
+
+    .pdfBox {
+        height: 600px;
+        width: 400px;
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(92, 30, 245, 0.05) 100%);
+        margin: 2rem auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        border-radius: 10px;
+        text-align: center;
+        backdrop-filter: blur(8px);
+        -webkit-backdrop-filter: blur(8px);
+    }
+
+    .voteBox {
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.08) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        padding: 1rem 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 320px;
+        max-width: 380px;
+        min-height: 220px;
+        z-index: 100;
+        position: absolute;
+        left: 51%;
+        top: 40%;
+        transform: translate(-50%, -50%);
+        align-self: center;
+        justify-self: center;
+        box-sizing: border-box;
+    }
+
+    .voteBoxTemplates {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 18px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .voteTemplateButton {
+        margin: 2px;
+        padding: 8px 18px;
+        border-radius: 8px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.1);
+    }
+
+    .voteTemplateButton:hover {
+        background: rgba(92, 30, 245, 0.12);
+        border-color: rgba(92, 30, 245, 0.4);
+        transform: scale(1.05);
+    }
+
+    .voteTemplateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedTemplate {
+        background: rgba(92, 30, 245, 0.2);
+        color: #b8a5ff;
+        font-weight: 600;
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        box-shadow: 0 0 8px rgba(92, 30, 245, 0.28);
+    }
+
+    .voteBoxInput {
+        width: 100%;
+        height: 180px;
+        margin-top: 10px;
+        margin-bottom: 18px;
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 1rem;
+        padding: 10px;
+        resize: none;
+        outline: none;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+    }
+
+    .voteBoxInput:focus {
+        border-color: #01f5ff;
+        box-shadow: 0 0 12px rgba(1, 245, 255, 0.3);
+        background-color: rgba(30, 30, 46, 0.9);
+    }
+
+    .voteBoxSubmitButton {
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        color: #fff;
+        font-family: var(--font-family);
+        font-size: 1.1rem;
+        font-weight: 500;
+        border: none;
+        border-radius: 6px;
+        padding: 12px 25px;
+        cursor: pointer;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .voteBoxSubmitButton:hover {
+        box-shadow: 0 8px 25px rgba(140, 82, 255, 0.4);
+        transform: translateY(-2px);
+    }
+
+    .voteBoxSubmitButton:active {
+        transform: translateY(0);
+    }
+
+    .pdfContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sessionPDF {
+        flex: 1 1 auto;
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(56, 182, 255, 0.1);
+    }
+
+    .fullScreenRow {
+        position: absolute;
+        bottom: 7px;
+        left: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        padding-bottom: 8px;
+        z-index: 2;
+    }
+
+    .fullScreenIcon {
+        height: 22px;
+        width: 22px;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .fullScreenIcon:hover {
+        transform: scale(1.1);
+    }
+
+    .fullScreenIcon:active {
+        transform: scale(1);
+    }
+
+    .votingRow {
+        display: flex;
+        justify-content: center;
+        width: fit-content;
+        flex-direction: row;
+        gap: 7px;
+        align-self: flex-end;
+        margin-left: auto;
+        margin-right: 40px;
+    }
+
+    .voteIcon {
+        height: 25px;
+        width: auto;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+
+    .voteIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .voteIcon:active {
+        transform: scale(1);
+    }
+
+    .AIButtonDisabled {
+        color: #fff;
+        filter: grayscale(0.5);
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        padding: 12px 30px;
+        border: none;
+        font-family: var(--font-family);
+        font-size: 18px;
+        border-radius: 7px;
+        transition: box-shadow 0.25s, filter 0.25s, transform 0.2s;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        position: relative;
+        z-index: 1;
+    }
+
+    .AIButton {
+        color: #fff;
+        background: linear-gradient(to right, #ff5757, #8c52ff);
+        padding: 12px 30px;
+        border: none;
+        font-family: var(--font-family);
+        font-size: 18px;
+        border-radius: 7px;
+        transition: box-shadow 0.25s, filter 0.25s, transform 0.2s;
+        box-shadow: 0 4px 15px rgba(140, 82, 255, 0.2);
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    .AIButton:hover {
+        box-shadow: 0 8px 25px rgba(140, 82, 255, 0.4);
+        filter: brightness(1.07);
+        outline: none;
+        transform: translateY(-2px) scale(1.04);
+    }
+
+    .AIButton:active {
+        transform: translateY(0) scale(1);
+    }
+
+    .recordColumn {
+        right: 0;
+        margin-right: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        width: fit-content;
+        align-items: center;
+        padding-top: 4rem;
+    }
+
+    .recordButton {
+        height: 255px;
+        width: 255px;
+        border-radius: 50%;
+        border: none;
+        align-self: center;
+        justify-self: center;
+        background-color: #9440dd;
+        transition: all 0.3s ease;
+    }
+
+    [data-theme='light'] .recordButton {
+        background-color: #170430;
+    }
+
+    .micIcon {
+        height: 75px;
+        width: 55px;
+        align-self: center;
+        justify-self: center;
+    }
+
+    @keyframes speechWave1 {
+        0% {
+            transform: translate(-50%, -50%) scale(0.85);
+            opacity: 0.7;
+        }
+
+        70% {
+            opacity: 0.15;
+        }
+
+        100% {
+            transform: translate(-50%, -50%) scale(1.15);
+            opacity: 0;
+        }
+    }
+
+    @keyframes speechWave2 {
+        0% {
+            transform: translate(-50%, -50%) scale(0.7);
+            opacity: 0.5;
+        }
+
+        70% {
+            opacity: 0.1;
+        }
+
+        100% {
+            transform: translate(-50%, -50%) scale(1.2);
+            opacity: 0;
+        }
+    }
+
+    @keyframes speechWave3 {
+        0% {
+            transform: translate(-50%, -50%) scale(0.5);
+            opacity: 0.35;
+        }
+
+        70% {
+            opacity: 0.08;
+        }
+
+        100% {
+            transform: translate(-50%, -50%) scale(1.35);
+            opacity: 0;
+        }
+    }
+
+    .recordButtonActive {
+        position: relative;
+        height: 255px;
+        width: 255px;
+        border-radius: 50%;
+        border: none;
+        align-self: center;
+        justify-self: center;
+        background-color: #9440dd;
+        transition: all 0.3s ease;
+        overflow: visible;
+        z-index: 1;
+    }
+
+    [data-theme='light'] .recordButtonActive {
+        background-color: #170430;
+    }
+
+    .recordButtonActive::before,
+    .recordButtonActive::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+    }
+
+    .recordButtonActive::before {
+        width: 320px;
+        height: 320px;
+        border: 4px solid #a97cffcc;
+        opacity: 0.85;
+        animation: speechWave1 1.8s infinite linear;
+    }
+
+    [data-theme='light'] .recordButtonActive::before {
+        border: 4px solid #130724bd;
+    }
+
+    .recordButtonActive::after {
+        width: 370px;
+        height: 370px;
+        border: 4px solid #31edaecc;
+        opacity: 0.7;
+        animation: speechWave2 2.2s infinite linear;
+    }
+
+    .recordButtonActive .micIcon {
+        position: relative;
+        z-index: 2;
+    }
+
+    .recordButtonActive::marker,
+    .recordButtonActive .extraWave {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 0;
+        width: 420px;
+        height: 420px;
+        border: 3px solid #31edae99;
+        opacity: 0.35;
+        animation: speechWave3 3s infinite linear;
+    }
+
+    .recordButton:hover,
+    .recordButtonActive:hover {
+        transform: scale(1.05);
+    }
+
+    .recordButton:active,
+    .recordButtonActive:active {
+        transform: scale(1);
+    }
+
+    .templateBox {
+        width: 18vw;
+        height: auto;
+        max-height: 150px;
+        max-width: 325px;
+        background: linear-gradient(135deg, rgba(30, 30, 46, 0.8) 0%, rgba(92, 30, 245, 0.05) 100%);
+        border: 1px solid var(--divider-color);
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        padding: 8px;
+        box-shadow: 0 6px 21px rgba(227, 236, 236, 0.05);
+    }
+
+    .aiTemplateButton {
+        margin: 5px;
+        padding: 8px 18px;
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.7);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.1);
+    }
+
+    .aiTemplateButton:hover {
+        transform: scale(1.03);
+        border-color: rgba(92, 30, 245, 0.45);
+    }
+
+    .aiTemplateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedAITemplate {
+        margin: 5px;
+        padding: 8px 18px;
+        border-radius: 6px;
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        background: rgba(92, 30, 245, 0.16);
+        color: #b8a5ff;
+        font-family: var(--font-family);
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 8px rgba(92, 30, 245, 0.16);
+    }
+
+    /* ======= Sensitive Input Styles ======= */
+    .sensitiveScriptInput {
+        max-width: 500px;
+        min-width: 400px;
+        width: 100%;
+        min-height: 250px;
+        margin-top: 4rem;
+        margin-bottom: 1.25rem;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--divider-color);
+        background: rgba(30, 30, 46, 0.72);
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.95rem;
+        line-height: 1.5;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+        box-shadow: 0 4px 14px rgba(92, 30, 245, 0.12);
+        transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .sensitiveScriptInput:focus {
+        border-color: #01f5ff;
+        box-shadow: 0 0 0 3px rgba(1, 245, 255, 0.18);
+        background: rgba(30, 30, 46, 0.9);
+    }
+
+    .sensitiveScriptInput::placeholder {
+        color: rgba(194, 187, 218, 0.82);
+    }
+
+    /* ======= Consent Button Styles ======= */
+    .consentRow {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .consentLabel {
+        font-family: var(--font-family);
+        color: var(--color);
+        font-size: 1rem;
+    }
+
+    .consentButton {
+        padding: 0;
+        border-radius: 6px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        justify-self: center;
+    }
+
+    .consentButton:hover {
+        transform: scale(1.05);
+    }
+
+    .consentButton:active {
+        transform: scale(1);
+    }
+
+    .consentIcon {
+        height: 22px;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* ======= SOAP Column Styles ======= */
+    .soapColumn {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 0.5rem;
+        width: fit-content;
+        align-self: flex-start;
+        width: 100%;
+    }
+
+    .letterRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        margin-top: 1rem;
+        justify-self: flex-start;
+        justify-items: flex-start;
+    }
+
+    .letterIcon {
+        height: 100px;
+        width: auto;
+        filter: brightness(0.95) contrast(1.08) saturate(1.04);
+    }
+
+    .letterText {
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        letter-spacing: 0.02em;
+    }
+
+    /* ======= Sessions Stylings ======= */
+    .prevSessionsBox {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem;
+        padding-top: 0.5rem;
+        border: 1px solid var(--divider-color);
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--background) 0%, rgba(92, 30, 245, 0.05) 100%);
+        box-shadow: 0 6px 20px rgba(23, 4, 48, 0.08);
+        margin-bottom: 7rem;
+    }
+
+    .prevSessionsHeader {
+        margin-bottom: 0.75rem;
+        text-align: center;
+    }
+
+    .prevSessionsTitle {
+        font-size: 1.5rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .prevSessionsSplit {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        min-height: 260px;
+        width: 100%;
+    }
+
+    .prevSessionsListSplit {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: auto;
+        border-radius: 8px;
+        width: fit-content;
+    }
+
+    .prevSessionsList {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        height: 320px;
+        overflow-y: auto;
+        padding: 0.1rem 0.25rem;
+        width: 100%;
+        border-radius: 8px;
+        margin-right: 10px;
+        overflow-x: visible;
+    }
+
+    .selectedPrevSessionButton,
+    .prevSessionsActivateButton {
+        border-radius: 6px;
+        border: 1px solid var(--divider-color);
+        background: transparent;
+        color: var(--color);
+        font-family: var(--font-family);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        width: fit-content;
+        text-align: center;
+        padding: 15px 40px;
+    }
+
+    .selectedPrevSessionButton:hover,
+    .prevSessionsActivateButton:hover {
+        background: rgba(92, 30, 245, 0.1);
+        border-color: rgba(92, 30, 245, 0.45);
+        transform: scale(1.05);
+    }
+
+    .selectedPrevSessionButton:active,
+    .prevSessionsActivateButton:active {
+        transform: scale(1);
+    }
+
+    .selectedPrevSessionButton {
+        background: rgba(92, 30, 245, 0.16);
+        border: 1px solid rgba(92, 30, 245, 0.5);
+        font-weight: 600;
+        box-shadow: 0 0 8px rgba(92, 30, 245, 0.28);
+    }
+
+    .prevSessionsActivateTitle {
+        font-size: 0.8rem;
+        margin: 0;
+        color: var(--color);
+    }
+
+    .prevSessionsActivateButton:hover .prevSessionsActivateTitle,
+    .selectedPrevSessionButton:hover .prevSessionsActivateTitle {
+        color: #b8a5ff;
+    }
+
+    .noPrevSessions {
+        color: var(--color);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        opacity: 0.75;
+        text-align: center;
+        align-self: center;
+        justify-self: center;
+        margin-top: 2rem;
+        font-style: italic;
+    }
+
+    .prevSessionButton {
+        justify-self: end;
+        width: fit-content;
+        height: 36px;
+        border-radius: 8px;
+        padding: 10px 55px;
+        border: 1px solid var(--divider-color);
+        background: rgba(74, 74, 83, 0.65);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .prevSessionButton:hover {
+        transform: scale(1.02);
+    }
+
+    .prevSessionButton:active {
+        transform: scale(1);
+    }
+
+    .plusIcon {
+        height: 18px;
+        width: auto;
+        transition: all 0.2s ease;
+    }
+
+    .prevSessionsInfoBox {
+        display: flex;
+        flex-direction: row;
+        gap: 0.45rem;
+        width: 100%;
+    }
+
+    .prevSessionsInfoPro,
+    .prevSessionsInfoPatient {
+        border-radius: 10px;
+        border: 1px solid var(--divider-color);
+        padding: 0.85rem;
+        overflow-y: auto;
+        background: rgba(30, 30, 46, 0.45);
+        width: 100%;
+        overflow-y: auto;
+    }
+
+    .prevSessionText {
+        margin: 0;
+        font-size: 1rem;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        display: block;
+        line-height: 1.45;
+        color: var(--color);
+        background-color: transparent;
+        border: none;
+        resize: none;
+        outline: none;
+        padding: 0;
+        overflow-y: auto;
+    }
+
+    .prevSessionText::placeholder {
+        color: rgba(194, 187, 218, 0.82);
+    }
+
+    .prevSessionText:focus,
+    .prevSessionText:focus-visible,
+    .prevSessionText:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .missingPatientText {
+        color: rgba(255, 97, 146, 0.85);
+        font-family: var(--font-family);
+        font-size: 0.9rem;
+        font-style: italic;
+        text-align: center;
+        margin-top: 1.5rem;
+    }
+
+
+    /* ======= Patient Assignment Stylings ======= */
+    .clientAssignmentsTitle {
+        margin: 0;
+        margin-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: var(--color);
+        text-align: center;
+    }
+
+    .clientAssignments {
+        width: 300px;
+        height: 500px;
+        padding: 0.9rem;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 97, 146, 0.35);
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 122, 162, 0.18) 0%, transparent 35%),
+            linear-gradient(145deg, rgba(48, 18, 38, 0.95) 0%, rgba(35, 14, 33, 0.95) 100%);
+        box-shadow:
+            0 10px 30px rgba(255, 73, 140, 0.12),
+            inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+    }
+
+    .assignmentsColumnDisplay {
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+        height: 100%;
+        width: 100%;
+        overflow-y: auto;
+        padding: 0.1rem 0;
+    }
+
+    .clientAssignment {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.7rem;
+        padding: 0.75rem 0.8rem;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 123, 172, 0.32);
+        background: linear-gradient(135deg, rgba(255, 88, 150, 0.16), rgba(189, 41, 109, 0.08));
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .clientAssignment:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 145, 186, 0.62);
+        background: linear-gradient(135deg, rgba(255, 102, 159, 0.24), rgba(205, 51, 125, 0.14));
+        box-shadow: 0 10px 22px rgba(255, 91, 154, 0.2);
+    }
+
+    .clientAssignment:active {
+        transform: translateY(0);
+        background-color: rgba(202, 79, 124, 0.26);
+    }
+
+    .clientAssignmentTitle {
+        margin: 0;
+        font-family: var(--font-family);
+        font-size: 0.92rem;
+        font-weight: 600;
+        letter-spacing: 0.01em;
+        color: #ffd8e9;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .deleteAssignmentButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        height: fit-content;
+        padding: 0.5rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        flex: 0 0 auto;
+        border-radius: 6px;
+        transition: transform 0.2s ease, border-color 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .deleteAssignmentButton:hover {
+        transform: scale(1.06);
+        border-color: rgba(255, 167, 200, 0.85);
+        border-radius: 6px;
+        background: rgba(255, 111, 164, 0.26);
+        box-shadow: 0 6px 14px rgba(255, 93, 151, 0.28);
+    }
+
+    .deleteAssignmentButton:active {
+        transform: scale(1);
+        background-color: rgba(202, 79, 124, 0.26);
+        border-radius: 6px;
+    }
+
+    .deleteIcon {
+        width: auto;
+        height: 18px;
+        opacity: 0.95;
+        filter: saturate(1.1) contrast(1.05);
+    }
+
+    .newAssignmentButton {
+        width: 100%;
+        height: 38px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 138, 185, 0.48);
+        background: linear-gradient(135deg, rgba(255, 97, 146, 0.14), rgba(255, 122, 162, 0.08));
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: auto;
+        cursor: pointer;
+        justify-self: end;
+        transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .newAssignmentButton:hover {
+        transform: translateY(-1px);
+        border-color: rgba(255, 170, 202, 0.8);
+        background: linear-gradient(135deg, rgba(255, 113, 159, 0.22), rgba(255, 134, 173, 0.12));
+        box-shadow: 0 8px 20px rgba(255, 92, 150, 0.2);
+    }
+
+    .newAssignmentButton:active {
+        transform: translateY(0);
+    }
+
+    /* ======= Assignment editing card ======= */
+    .assignmentCardOverlay {
+        position: fixed;
+        inset: 0;
+        z-index: 5000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0.55);
+        backdrop-filter: blur(3px);
+    }
+
+    .assignmentCard {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 480px;
+        padding: 28px;
+        border-radius: 16px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.15) 0%, transparent 50%),
+            linear-gradient(145deg, #1e1e2e 0%, #181824 100%);
+        box-shadow: 0 20px 48px rgba(226, 58, 126, 0.2);
+    }
+
+    .assignmentTitleInput {
+        width: 100%;
+        padding: 10px 14px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+        color: #f0d6e8;
+        font-size: 16px;
+        font-weight: 600;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .assignmentTitleInput:focus {
+        border-color: rgba(255, 130, 175, 0.65);
+        background: rgba(255, 130, 175, 0.12);
+    }
+
+    .assignmentCardTextColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+    }
+
+    .assignmentDescriptionInput {
+        width: 100%;
+        height: 200px;
+        padding: 10px 14px;
+        border: none;
+        background: none;
+        color: #f0d6e8;
+        font-size: 14px;
+        resize: none;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+    .assignmentDescriptionInput:focus,
+    .assignmentDescriptionInput:focus-visible,
+    .assignmentDescriptionInput:active {
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    .assignmentCardFileRow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 2px;
+    }
+
+    .fileInputHidden {
+        display: none;
+    }
+
+    .fileAttachButton {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: fit-content;
+        margin: 0 0 0.5rem 1rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        flex-shrink: 0;
+    }
+
+    .fileAttachButton:hover {
+        transform: translateY(-1px);
+    }
+
+    .fileAttachButton:active {
+        transform: translateY(0);
+    }
+
+    .paperclipIcon {
+        width: auto;
+        height: 22px;
+        object-fit: contain;
+        opacity: 0.95;
+    }
+
+    .attachedFileLink {
+        display: inline-flex;
+        align-items: center;
+        min-height: 34px;
+        padding: 0 12px;
+        border-radius: 8px;
+        color: #f0d6e8;
+        font-size: 13px;
+        font-weight: 500;
+        text-decoration: none;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 280px;
+        transition: all 0.3s ease;
+    }
+
+    .attachedFileLink:hover {
+        color: #d8acbf;
+    }
+
+    .deleteFileIcon {
+        height: 18px;
+        width: auto;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .deleteFileIcon:hover {
+        transform: scale(1.05);
+    }
+
+    .deleteFileIcon:active {
+        transform: scale(1);
+    }
+
+    .assignmentDetailsColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .assignmentDetailsTitleRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        margin-bottom: 6px;
+    }
+
+    .assignmentDetailsTitle {
+        flex: 1;
+        margin: 0;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+        color: var(--color);
+        opacity: 0.85;
+        text-align: left;
+    }
+
+    .assignmentDetailsRow {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .assignmentDetailInput {
+        flex: 1;
+        padding: 8px 10px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.3);
+        background: rgba(255, 130, 175, 0.07);
+        color: #f0d6e8;
+        font-size: 13px;
+        outline: none;
+        min-width: 0;
+        box-sizing: border-box;
+    }
+
+    .assignmentDetailInput:focus {
+        border-color: rgba(255, 130, 175, 0.65);
+        background: rgba(255, 130, 175, 0.12);
+    }
+
+    .saveAssignmentButton {
+        align-self: flex-end;
+        padding: 9px 22px;
+        border-radius: 8px;
+        border: 1px solid rgba(255, 130, 175, 0.4);
+        background: linear-gradient(135deg, rgba(255, 100, 160, 0.35), rgba(255, 150, 190, 0.2));
+        color: #f0d6e8;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .saveAssignmentButton:hover {
+        background: linear-gradient(135deg, rgba(255, 100, 160, 0.5), rgba(255, 150, 190, 0.32));
+        border-color: rgba(255, 130, 175, 0.7);
+        transform: scale(1.03);
+    }
+
+    .saveAssignmentButton:active {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+
+    /* ======= CONCUSSION DATA DISPLAY STYLES ======= */
+    .concussionColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+        padding: 1rem;
+        height: 85%;
+    }
+
+    .concussionHeader {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+    }
+
+    .concussionPast {
+        font-size: 1.4rem;
+        color: var(--color);
+        text-align: left;
+        margin: 0;
+    }
+
+    .concussionPastResults {
+        font-weight: 500;
+        color: #31edae;
+        margin-left: 0.25rem;
+        font-style: italic;
+    }
+
+    .concussionDetailsHeader {
+        font-size: 1.2rem;
+        align-self: first baseline;
+        margin: 0;
+    }
+
+    .concussionDetails {
+        margin: 0;
+        font-family: var(--font-family);
+        color: var(--color);
+        line-height: 1.1;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        align-items: first baseline;
+        margin-left: 5px;
+        margin-bottom: 10px
+    }
+
+    .pastConcussionDetailLabel {
+        margin: 0;
+        font-family: var(--font-family);
+        color: rgba(231, 228, 242, 0.92);
+        font-size: clamp(0.68rem, 1.2vw, 0.8rem);
+        letter-spacing: 0.04em;
+        padding: 0;
+    }
+
+    .concussionSymptoms {
+        margin: 0.25rem 0 0;
+        font-family: var(--font-family);
+        font-size: 16px;
+        font-weight: 400;
+        color: var(--color);
+        text-align: left;
+    }
+
+    .concussionSymptomsList {
+        margin: 0;
+        margin-left: 1.25rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 0.42rem;
+    }
+
+    .concussionSymptomItem {
+        margin: 0;
+        color: #d9d1ff;
+        font-family: var(--font-family);
+        font-size: 13px;
+        line-height: 1.15;
+        white-space: nowrap;
+        text-align: left;
+        letter-spacing: 0.02em;
+    }
+
+    .testResults {
+        margin: 0.3rem 0 0;
+        font-family: var(--font-family);
+        font-size: 16px;
+        color: var(--color);
+        padding: 0.52rem 0.68rem;
+    }
+
+    /* ======= Stylings for Controlling the Session View ======= */
+    .sessionViewColumn {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        margin-left: auto;
+        width: fit-content;
+        align-self: center;
+        justify-self: center;
+        margin-right: 1rem;
+    }
+
+    .sessionOption,
+    .sessionOptionActive {
+        width: 15px;
+        height: 15px;
+        border-radius: 100px;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
+        outline: none;
+    }
+
+    .sessionOption {
+        background: rgba(192, 201, 212, 0.45);
+        opacity: 0.85;
+    }
+
+    .sessionOptionActive {
+        background: #55e7b6;
+        box-shadow: 0 0 0 3px rgba(85, 231, 182, 0.2);
+    }
+
+    .sessionOption:hover,
+    .sessionOptionActive:hover {
+        transform: scale(1.12);
+    }
+
+    .sessionOption:active,
+    .sessionOptionActive:active {
+        transform: scale(1);
+        outline: none;
+    }
+
+    .ropeButton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .sidebarTooltip {
+        position: absolute;
+        right: 40px;
+        background: rgba(0, 0, 0, 0.9);
+        color: white;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+        font-size: 0.875rem;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease;
+        z-index: 1001;
+        font-family: 'Rubik', sans-serif;
+    }
+
+    .ropeButton:hover .sidebarTooltip {
+        opacity: 1;
+    }
+
+    .sidebarTooltip::before {
+        content: '';
+        position: absolute;
+        right: -4px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 0;
+        height: 0;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+        border-right: 4px solid rgba(0, 0, 0, 0.9);
+    }
+
+    /* ======= Light Theme Overrides ======= */
+    :global([data-theme="light"]) .aiBox,
+    :global([data-theme="light"]) .voteBox,
+    :global([data-theme="light"]) .pdfBox,
+    :global([data-theme="light"]) .templateBox {
+        background: linear-gradient(135deg, #ffffff 0%, rgba(92, 30, 245, 0.04) 100%);
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 8px 24px rgba(23, 4, 48, 0.08);
+    }
+
+    :global([data-theme="light"]) .voteTemplateButton,
+    :global([data-theme="light"]) .aiTemplateButton,
+    :global([data-theme="light"]) .voteBoxInput {
+        background-color: #ffffff;
+        color: var(--color);
+        border: 1px solid var(--divider-color);
+    }
+
+    :global([data-theme="light"]) .voteBoxInput:focus {
+        border-color: #5c1ef5;
+        box-shadow: 0 0 0 3px rgba(92, 30, 245, 0.14);
+        background-color: #ffffff;
+    }
+
+    :global([data-theme="light"]) .selectedTemplate,
+    :global([data-theme="light"]) .selectedAITemplate {
+        background: rgba(92, 30, 245, 0.1);
+        color: #5c1ef5;
+        border-color: rgba(92, 30, 245, 0.35);
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput {
+        background: #ffffff;
+        color: var(--color);
+        border: 1px solid var(--divider-color);
+        box-shadow: 0 4px 12px rgba(23, 4, 48, 0.08);
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput:focus {
+        border-color: #5c1ef5;
+        box-shadow: 0 0 0 3px rgba(92, 30, 245, 0.14);
+        background: #ffffff;
+    }
+
+    :global([data-theme="light"]) .sensitiveScriptInput::placeholder {
+        color: rgba(95, 88, 119, 0.82);
+    }
+
+    :global([data-theme="light"]) .homeButton {
+        border: 1px solid rgba(92, 30, 245, 0.35);
+        background: linear-gradient(135deg, rgba(92, 30, 245, 0.1), rgba(92, 30, 245, 0.05));
+        box-shadow: 0 4px 12px rgba(92, 30, 245, 0.12);
+    }
+
+    :global([data-theme="light"]) .homeButtonText {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .prevSessionsBox {
+        background: linear-gradient(145deg, #ffffff 0%, #f7f5ff 55%, #f2f8ff 100%);
+        border: 1px solid #ddd6f7;
+        box-shadow: 0 10px 28px rgba(30, 18, 74, 0.08);
+    }
+
+    :global([data-theme="light"]) .prevSessionsTitle {
+        color: #2a2352;
+    }
+
+    :global([data-theme="light"]) .noPrevSessions {
+        color: #5c5682;
+        opacity: 0.9;
+    }
+
+    :global([data-theme="light"]) .prevSessionsList {
+        background: transparent;
+        border: none;
+    }
+
+    :global([data-theme="light"]) .prevSessionsInfoPro {
+        background: #ffffff;
+        border: 1px solid #dcd3fa;
+        color: #2b2552;
+    }
+
+    :global([data-theme="light"]) .prevSessionsList .prevSessionsInfoPro:hover {
+        border-color: #8b6af2;
+        box-shadow: 0 6px 14px rgba(92, 30, 245, 0.14);
+        transform: translateY(-1px);
+    }
+
+    :global([data-theme="light"]) .prevSessionsInfoBox .prevSessionsInfoPro,
+    :global([data-theme="light"]) .prevSessionsInfoBox .prevSessionsInfoPatient {
+        background: linear-gradient(180deg, #ffffff 0%, #faf9ff 100%);
+        border: 1px solid #dcd3fa;
+        color: #2b2552;
+    }
+
+    :global([data-theme="light"]) .prevSessionText {
+        color: #342d63;
+    }
+
+    :global([data-theme="light"]) .prevSessionButton {
+        background: #ffffff;
+        border: 1px solid #d3c8f7;
+    }
+
+    :global([data-theme="light"]) .prevSessionButton:hover {
+        border-color: #8b6af2;
+        box-shadow: 0 6px 14px rgba(92, 30, 245, 0.16);
+    }
+
+    :global([data-theme='light']).prevSessionsActivateButton:hover .prevSessionsActivateTitle,
+    :global([data-theme='light']).selectedPrevSessionButton:hover .prevSessionsActivateTitle {
+        color: #7c63da;
+    }
+
+    :global([data-theme="light"]) .plusIcon {
+        filter: brightness(0) saturate(100%) invert(22%) sepia(21%) saturate(1200%) hue-rotate(219deg) brightness(96%) contrast(95%);
+    }
+
+    :global([data-theme="light"]) .clientAssignments {
+        border: 1px solid #f3bfd2;
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.2) 0%, transparent 38%),
+            linear-gradient(145deg, #fff5f9 0%, #ffeef5 100%);
+        box-shadow: 0 10px 24px rgba(226, 58, 126, 0.12);
+    }
+
+    :global([data-theme="light"]) .clientAssignment {
+        border: 1px solid #efb3cc;
+        background: linear-gradient(135deg, rgba(255, 122, 169, 0.2), rgba(255, 169, 199, 0.12));
+    }
+
+    :global([data-theme="light"]) .clientAssignment:hover {
+        border-color: #e47aa7;
+        background: linear-gradient(135deg, rgba(255, 114, 165, 0.28), rgba(255, 150, 189, 0.17));
+    }
+
+    :global([data-theme="light"]) .clientAssignmentTitle {
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .deleteAssignmentButton:hover {
+        border-color: #d96398;
+        background: rgba(255, 103, 158, 0.28);
+    }
+
+    :global([data-theme="light"]) .newAssignmentButton {
+        border: 1px dashed #e39bbd;
+        background: linear-gradient(135deg, rgba(255, 120, 168, 0.2), rgba(255, 167, 198, 0.13));
+    }
+
+    :global([data-theme="light"]) .newAssignmentButton:hover {
+        border-color: #d86298;
+        background: linear-gradient(135deg, rgba(255, 111, 162, 0.27), rgba(255, 149, 188, 0.18));
+    }
+
+    :global([data-theme="light"]) .assignmentCard {
+        border: 1px solid #f3bfd2;
+        background:
+            radial-gradient(circle at 10% 10%, rgba(255, 125, 170, 0.2) 0%, transparent 40%),
+            linear-gradient(145deg, #fff5f9 0%, #ffeef5 100%);
+        box-shadow: 0 20px 48px rgba(226, 58, 126, 0.15);
+    }
+
+    :global([data-theme="light"]) .assignmentTitleInput,
+    :global([data-theme="light"]) .assignmentCardTextColumn,
+    :global([data-theme="light"]) .assignmentDetailInput {
+        border: 1px solid #efb3cc;
+        background: rgba(255, 122, 169, 0.1);
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .assignmentTitleInput:focus,
+    :global([data-theme="light"]) .assignmentDetailInput:focus {
+        border-color: #d96398;
+        background: rgba(255, 114, 165, 0.18);
+    }
+
+    :global([data-theme="light"]) .assignmentDescriptionInput {
+        background: transparent;
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .assignmentDescriptionInput::placeholder {
+        background: transparent;
+        color: rgba(111, 29, 67, 0.82);
+    }
+
+    :global([data-theme="light"]) .saveAssignmentButton {
+        border: 1px solid #e39bbd;
+        background: linear-gradient(135deg, rgba(255, 120, 168, 0.3), rgba(255, 167, 198, 0.18));
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .saveAssignmentButton:hover {
+        border-color: #d86298;
+        background: linear-gradient(135deg, rgba(255, 111, 162, 0.42), rgba(255, 149, 188, 0.26));
+    }
+
+    :global([data-theme="light"]) .fileAttachButton {
+        filter: brightness(0.3);
+    }
+
+    :global([data-theme="light"]) .attachedFileLink {
+        color: #6f1d43;
+    }
+
+    :global([data-theme="light"]) .attachedFileLink:hover {
+        color: #d96398;
+    }
+
+    :global([data-theme="light"]) .concussionPastResults {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .pastConcussionDetailLabel {
+        color: rgba(49, 43, 77, 0.9);
+    }
+
+    :global([data-theme="light"]) .concussionSymptomItem {
+        color: #5c1ef5;
+    }
+
+    :global([data-theme="light"]) .testResults {
+        color: #1f2b4a;
+    }
+
+    :global([data-theme="light"]) .sidebarTooltip {
+        background: rgba(30, 30, 46, 0.95);
+        color: #f5f5f5;
+    }
+
+    :global([data-theme="light"]) .sidebarTooltip::before {
+        border-right-color: rgba(30, 30, 46, 0.95);
+    }
+}
